@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /*
 Design a class to represent a bank account. Include the following members:
@@ -16,6 +15,8 @@ Methods:
 Test the bank account class by performing all actions defined in BankAccount class.
 
 */
+import java.util.Scanner;
+
 public class BankAccount {
      String nameOfDepositor;
      String accountNumber;
