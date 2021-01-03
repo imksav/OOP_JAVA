@@ -8,14 +8,14 @@
 import java.util.Scanner;
 
 public class Interest {
-     double principal;
-     float rate;
-     float year;
+     private double principal;
+     private float rate;
+     private float time;
 
-     Interest(double principal, float rate, float year) {
+     Interest(double principal, float rate, float time) {
           this.principal = principal;
           this.rate = rate;
-          this.year = year;
+          this.time = time;
      }
 
      // setter for principal
@@ -29,13 +29,16 @@ public class Interest {
      }
 
      // setter for year
-     public void setYear(float year) {
-          this.year = year;
+     public void setYear(float time) {
+          this.time = time;
      }
 
      // getter for principal
      public double getPrincipal() {
+          // this.principal is not compulsory as principal is set to principal variable on
+          // main class
           return this.principal;
+
      }
 
      // getter for rate
@@ -45,11 +48,16 @@ public class Interest {
 
      // getter for year
      public float getYear() {
-          return this.year;
+          return this.time;
      }
 
-     public static double calculateInterest(double p, float r, float y) {
-          double simpleInterest = ((p * r * y) / 100);
+     // public static double calculateInterest(double p, float r, float t) {
+     // double simpleInterest = ((p * r * t) / 100);
+     // return simpleInterest;
+     // }
+     // not to use
+     public double calculateInterest() {
+          double simpleInterest = ((principal * rate * time) / 100);
           return simpleInterest;
      }
 
@@ -59,16 +67,17 @@ public class Interest {
           double principal = sc.nextDouble();
           System.out.println("Enter rate: ");
           float rate = sc.nextFloat();
-          System.out.println("Enter year");
-          float year = sc.nextFloat();
-          Interest i1 = new Interest(principal, rate, year);
-          i1.setPrincipal(principal);
-          i1.setRate(rate);
-          i1.setYear(year);
-          double p = i1.getPrincipal();
-          float r = i1.getRate();
-          float y = i1.getYear();
-          System.out.println("Simple Interest is Rs." + calculateInterest(p, r, y));
+          System.out.println("Enter time");
+          float time = sc.nextFloat();
+          Interest i1 = new Interest(principal, rate, time);
+          // when we don't know any variable then we use this way
+          // i1.setPrincipal(principal);
+          // i1.setRate(rate);
+          // i1.setYear(time);
+          // double p = i1.getPrincipal();
+          // float r = i1.getRate();
+          // float t = i1.getYear();
+          System.out.println("Simple Interest is Rs." + i1.calculateInterest());
           sc.close();
      }
 }
