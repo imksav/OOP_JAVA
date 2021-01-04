@@ -6,13 +6,14 @@ import java.util.Scanner;
 
 public class Circle {
      private double radius;
+     private double circumference;
 
      Circle(double radius) {
           this.radius = radius;
      }
 
      Circle() {
-          this.radius = 0;
+          this(0);
      }
 
      // setter and getter
@@ -28,7 +29,7 @@ public class Circle {
 
      // methods
      public void displayCircumference() {
-          double circumference = 2 * (22 / 7) * radius;
+          circumference = 2 * (22 / 7) * radius;
           System.out.println("Circumference of a circle is: " + circumference);
      }
 
