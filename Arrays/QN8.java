@@ -4,7 +4,7 @@ Write a Java Method to find the maximum and minimum value of an array.
 */
 import java.util.Arrays;
 
-public class QN9 {
+public class QN8 {
 
      public static void maximum(int array[]) {
           int[] arr = array.clone();
