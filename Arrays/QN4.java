@@ -2,6 +2,7 @@
 /*
 Write a Java Method to find the index of an array element.
 */
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class QN4 {
@@ -24,6 +25,7 @@ public class QN4 {
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
           int array[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
+          System.out.println("Array: " + Arrays.toString(array));
           System.out.println("Enter a value whose index you want to find in the array: ");
           int indexNum = sc.nextInt();
           int index = indexSearch(array, indexNum);
