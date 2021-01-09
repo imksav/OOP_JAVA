@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class QN2 {
      public static void sumAverage(int n, int Integer[]) {
-          int sum = 0;
+          double sum = 0;
           double average;
           for (int i = 0; i < n; i++) {
                sum = Integer[i] + sum;
           }
-          System.out.println("Sum: " + sum);
+          System.out.println("Sum of the array values is: " + sum);
           average = sum / n;
-          System.out.println("Average: " + average);
+          System.out.println("Average of the array values is: " + average);
      }
 
      public static void main(String[] args) {
