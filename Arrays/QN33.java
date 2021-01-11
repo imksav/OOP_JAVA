@@ -16,6 +16,12 @@
  * provide this. An example is content-addressable memory. This concept of
  * linear time is used in string matching algorithms such as the Boyer–Moore
  * algorithm and Ukkonen's algorithm.
+ * Example:
+     Input :
+     b_nums[] = { 0, 1, 1, 0, 1, 1, 0, 1, 0, 0 }
+     Output:
+     After sorting: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+
  */
 import java.util.Arrays;
 
@@ -34,7 +40,7 @@ public class QN33 {
      }
 
      public static void main(String[] args) {
-          int[] arr = { 1, 0, 1, 1, 1, 0, 0, 1 };
+          int[] arr = { 0, 1, 1, 0, 1, 1, 0, 1, 0, 0 };
           System.out.println("Initial Array:\t " + Arrays.toString(arr));
           sortBinary(arr);
           System.out.println("Result: " + Arrays.toString(arr));
