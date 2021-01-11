@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 public class QN11 {
      public static Object[] checkDuplicate(int array[]) {
-          int[] arrayClone = array.clone();
           ArrayList<Integer> duplicateArray = new ArrayList<>();
           for (int i = 0; i < array.length; i++) {
                for (int j = i + 1; j < array.length; j++) {
