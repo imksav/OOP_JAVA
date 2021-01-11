@@ -1,3 +1,15 @@
+/*
+Write a java program to take a 2d array input from user and print the sum of each row, column and total sum in as shown below:
+     input:
+          1 3 5 
+          2 4 6 
+     output:
+          1 3 5 9
+          2 4 6 12
+          3 7 11 21 
+
+*/
+
 import java.util.Scanner;
 import java.util.Arrays;
 
