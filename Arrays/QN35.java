@@ -22,12 +22,13 @@ public class QN35 {
                arr[i] = arr[j];
                arr[j] = temp;
           }
-          System.out.println(Arrays.toString(arr));
+          System.out.println("Final Array: " + Arrays.toString(arr));
      }
 
      public static void main(String[] args) {
 
           int[] arr = { 1, 2, 3, 4, 5, 6 };
+          System.out.println("Initial Array: " + Arrays.toString(arr));
           int n = arr.length;
           randomize(arr, n);
      }
