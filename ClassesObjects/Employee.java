@@ -46,7 +46,7 @@ public class Employee {
      }
 
      public String toString() {
-          String output = String.format("[id=%d, name=%s, salary=%d]", id, getName(), getSalary());
+          String output = String.format("Employee[id=%d, name=%s, salary=%d]", id, getName(), getSalary());
           return output;
      }
 
@@ -66,5 +66,6 @@ public class Employee {
           int percent = sc.nextInt();
           e1.raiseSalary(percent);
           System.out.println("Salary: " + e1.toString());
+          sc.close();
      }
 }
